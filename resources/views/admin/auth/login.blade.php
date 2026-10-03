@@ -1,6 +1,6 @@
 @extends('admin.auth.master')
 
-@section('title', 'Login')
+@section('title', __('keywords.login'))
 
 @section('content')
   <div class="wrapper vh-100">
@@ -20,24 +20,25 @@
               </g>
             </svg>
           </a>
-          <h1 class="h6 mb-3">Sign in</h1>
+          <h1 class="h6 mb-3">{{__('keywords.sign-in')}}</h1>
           <div class="form-group">
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input  id="inputEmail"  type="email" name="email"  class="form-control form-control-lg" placeholder="Email address"  autofocus="">
+            <label for="inputEmail" class="sr-only">{{__('keywords.email')}}</label>
+            <input  id="inputEmail"  type="email" name="email"  class="form-control form-control-lg" placeholder="{{__('keywords.email')}}"  autofocus="">
               <x-input-error :messages="$errors->get('email')" class="mt-2" />
 
           </div>
           <div class="form-group">
-            <label for="inputPassword" class="sr-only">Password</label>
-            <input type="password" id="inputPassword" name="password" class="form-control form-control-lg" placeholder="Password" >
+            <label for="inputPassword" class="sr-only">{{__('keywords.password')}}</label>
+            <input type="password" id="inputPassword" name="password" class="form-control form-control-lg" placeholder="{{__('keywords.password')}}" >
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
           </div>
           <div class="checkbox mb-3">
             <label>
-              <input type="checkbox" value="remember-me"> Stay logged in </label>
+              <input type="checkbox" value="remember-me"> {{__('keywords.remember-me')}}</label>
+                        @include('admin.partials.language-switcher')
+
           </div>
-          <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
-          <p class="mt-5 mb-3 text-muted">© 2020</p>
+          <button class="btn btn-lg btn-primary btn-block" type="submit">{{__('keywords.login')}}</button>
         </form>
       </div>
     </div>

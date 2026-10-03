@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
  @include('admin.partials.head')
-  <body class="vertical  light  ">
+  <body class="vertical  light @if(app()->getLocale() == 'ar') rtl @endif ">
 
     <div class="wrapper">
 
