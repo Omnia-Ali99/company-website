@@ -9,16 +9,13 @@
                     <h2 class="h5 page-title">{{ __('keywords.services') }}</h2>
 
                     <div class="page-title-right">
-                        <a href="{{ route('admin.services.create') }}" class="btn btn-sm btn-primary">{{ __('keywords.add_new') }}</a>
+                      <x-action-button href="{{ route('admin.services.create') }}" type="create"></x-action-button>
                     </div>
                 </div>
                   <div class="card shadow">
                     <div class="card-body">
-                     @if(session('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
-                        </div>
-                     @endif
+
+                   <x-success-alert-component></x-success-alert-component>
 
                       <table class="table table-hover">
                         <thead>
@@ -45,26 +42,17 @@
                                   <td>{{ $service->title }}</td>
                                   <td><i class="fe {{ $service->icon }} fa-2x"></i></td>
                                   <td>
-                                    <a href="{{ route('admin.services.edit', $service) }}" class="btn btn-sm btn-success">
-                                        <i class="fe fe-edit fa-2x"></i>
-                                    </a>
-                                    <a href="{{ route('admin.services.show', $service) }}" class="btn btn-sm btn-primary">
-                                        <i class="fe fe-eye fa-2x"></i>
-                                    </a>
-                                    <form action="{{ route('admin.services.destroy', $service) }}" method="POST" style="display: inline;">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('{{ __('keywords.confirm_delete') }}')">
-                                            <i class="fe fe-trash-2 fa-2x"></i>
-                                        </button>
-                                    </form>
+                                    
+                                    <x-action-button href="{{ route('admin.services.edit', $service) }}" type="edit" ></x-action-button>
+                                                        
+                                    <x-action-button href="{{ route('admin.services.show', $service) }}" type="show"></x-action-button>
+
+                                 <x-delete-button href="{{ route('admin.services.destroy', $service) }}"></x-delete-button>
                                   </td>
                                 </tr>
                               @endforeach
                             @else
-                              <tr>
-                                <td colspan="4" class="alert alert-danger text-center">{{ __('keywords.no_records_found') }}</td>
-                              </tr>
+                              <x-empty-alert></x-empty-alert>
                             @endif
                           </tr>
                       
