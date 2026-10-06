@@ -28,12 +28,7 @@
                         </thead>
                         <tbody>
                      
-                          <tr>
-                          <th width="5%">#</th>
-                          <th>{{ __('keywords.title') }}</th>
-                          <th width="15%">{{ __('keywords.icon') }}</th>
-                          <th width="15%">{{ __('keywords.actions') }}</th>
-                          </tr>
+                      
                           <tr>
                             @if($features->count()>0)
                               @foreach($features as $key => $feature)

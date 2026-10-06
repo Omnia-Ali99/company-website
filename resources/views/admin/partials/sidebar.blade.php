@@ -34,6 +34,7 @@
 
            <x-sidebar-component name="{{ __('keywords.features') }}" icon="fe-bookmark" route="{{ route('admin.features.index') }}" />
 
+          <x-sidebar-component name="{{ __('keywords.messages') }}" icon="fe-message-square" route="{{ route('admin.messages.index') }}" />
 
           </ul>
 

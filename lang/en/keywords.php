@@ -37,5 +37,12 @@ return [
         'edit_feature' => 'Edit Feature',
         'add_new_feature' => 'Add New Feature',
 
+        'messages' =>'Messages',
+        'message' =>'Message',
+        'show_message' => 'Show Message',
+        'name'=>'Name',
+        'subject'=>'Supject',
+
+
         
 ];

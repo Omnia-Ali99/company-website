@@ -32,7 +32,7 @@ class FeatureController extends Controller
     {
         $data = $request->validated();
         Feature::create($data);
-        return to_route('admin.features.index')->with('success', __('keywords.created_successfully'));
+        return to_route('admin.features.index')->with('success', __('keywords.successfully_created'));
     }
 
     /**
@@ -58,7 +58,7 @@ class FeatureController extends Controller
     {
         $data = $request->validated();
         $feature->update($data);
-        return to_route('admin.features.index')->with('success', __('keywords.updated_successfully'));
+        return to_route('admin.features.index')->with('success', __('keywords.successfully_updated'));
     }
 
     /**
@@ -67,6 +67,7 @@ class FeatureController extends Controller
     public function destroy(Feature $feature)
     {
         $feature->delete();
-        return to_route('admin.features.index')->with('success', __('keywords.deleted_successfully'));
+        return to_route('admin.features.index')->with('success', __('keywords.successfully_deleted'));
+        
     }
 }
