@@ -13,6 +13,7 @@ return [
         'logout' => 'Logout',
 
         'services' => 'Services',
+        'features'=>'Features',
         'home' => 'Home',
         'components' => 'Components',
         'icon' => 'Icon',
@@ -20,14 +21,21 @@ return [
         'title' => 'Title',
         'no_records_found' => 'No records found',
         'add_new' => 'Add New',
-        'add_new_service' => 'Add New Service',
         'description'=>'Description',
         'submit'=>'Submit',
         'successfully_created' => 'your record created successfully',
-        'show_service' => 'Show Service',
-        'edit_service' => 'Edit Service',
+     
         'successfully_updated' => 'your record updated successfully',
         'successfully_deleted' => 'your record deleted successfully',
         'confirm_delete' => 'Are you sure you want to delete this record?',
+
+        'show_service' => 'Show Service',
+        'edit_service' => 'Edit Service',
+        'add_new_service' => 'Add New Service',
+
+        'show_feature' => 'Show Feature',
+        'edit_feature' => 'Edit Feature',
+        'add_new_feature' => 'Add New Feature',
+
         
 ];

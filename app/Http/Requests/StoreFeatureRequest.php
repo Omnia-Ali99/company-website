@@ -1,17 +1,17 @@
 <?php
 
-namespace {{ namespace }};
+namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class {{ class }} extends FormRequest
+class StoreFeatureRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,14 +22,18 @@ class {{ class }} extends FormRequest
     public function rules(): array
     {
         return [
-            // 'title' => 'required|string',
+            'title' => 'required|string',
+            'icon' => 'required|string',
+            'description' => 'required|string',
         ];
     }
 
-    public function attributes(): array
+    public function attributes()
     {
         return [
-            // 'title' => __("keywords.title"),
+            'title' => __('keywords.title'),
+            'icon' => __('keywords.icon'),
+            'description' => __('keywords.description'),
         ];
     }
 }

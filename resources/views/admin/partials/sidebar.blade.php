@@ -31,7 +31,9 @@
             <ul class="navbar-nav flex-fill w-100 mb-2">
 
           <x-sidebar-component name="{{ __('keywords.services') }}" icon="fe-codesandbox" route="{{ route('admin.services.index') }}" />
-          
+
+           <x-sidebar-component name="{{ __('keywords.features') }}" icon="fe-bookmark" route="{{ route('admin.features.index') }}" />
+
 
           </ul>
 
