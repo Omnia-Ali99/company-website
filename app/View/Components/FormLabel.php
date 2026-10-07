@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class FormLable extends Component
+class FormLabel extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class FormLable extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.form-lable');
+        return view('components.form-label');
     }
 }

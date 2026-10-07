@@ -43,6 +43,11 @@
       <x-sidebar-component name="{{ __('keywords.subscribers') }}" icon="fe-users"
         route="{{ route('admin.subscribers.index') }}" />
 
+      <x-sidebar-component name="{{ __('keywords.testimonials') }}" icon="fe-message-circle"
+       route="{{ route('admin.testimonials.index') }}" />
+
+
+
 
     </ul>
 

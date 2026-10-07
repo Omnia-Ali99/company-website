@@ -42,7 +42,17 @@ return [
   'name' => 'الاسم',
   'subject' => 'الموضوع',
 
-  'subscribers' => 'المشتركون'
+  'subscribers' => 'المشتركون',
+
+  'testimonials' => 'آراء العملاء',
+  'show_testimonial' => 'عرض رأي العميل',
+  'edit_testimonial' => 'تعديل رأي العميل',
+  'add_new_testimonial' => 'إضافة رأي عميل جديد',
+
+  'position' => 'المنصب',
+  'image' => 'الصورة',
+
+
 
 
 

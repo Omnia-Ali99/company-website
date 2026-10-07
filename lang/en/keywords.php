@@ -43,8 +43,15 @@ return [
         'name' => 'Name',
         'subject' => 'Supject',
 
-        'subscribers' => 'Subscribers'
+        'subscribers' => 'Subscribers',
 
+        'testimonials' => 'Testimonials',
+        'show_testimonial' => 'Show testimonial',
+        'edit_testimonial' => 'Edit testimonial',
+        'add_new_testimonial' => 'Add New testimonial',
+
+        'position' => 'Position',
+        'image' => 'Image',
 
 
 ];
