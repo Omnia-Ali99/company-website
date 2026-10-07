@@ -53,6 +53,10 @@
        route="{{ route('admin.companies.index') }}" />
 
 
+  <x-sidebar-component name="{{ __('keywords.settings') }}" icon="fe-settings"
+       route="{{ route('admin.settings.index') }}" />
+
+
 
 
     </ul>

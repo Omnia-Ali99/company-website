@@ -62,11 +62,20 @@ return [
         'twitter' => 'Twitter',
         'linkedin' => 'LinkedIn',
 
-        
+
         'companies' => 'Companies',
         'show_company' => 'Show company',
         'edit_company' => 'Edit company',
         'add_new_company' => 'Add New company',
+
+        'address' => 'Address',
+        'phone' => 'Phone',
+        'youtube' => 'YouTube',
+        'instagram' => 'Instagram',
+        
+        'settings' => 'Settings',
+        'edit_setting' => 'Edit Setting',
+
 
 
 

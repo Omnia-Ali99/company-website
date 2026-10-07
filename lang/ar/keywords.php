@@ -68,4 +68,11 @@ return [
 'edit_company' => 'تعديل الشركة',
 'add_new_company' => 'إضافة شركة جديدة',
 
+'address' => 'العنوان',
+'phone' => 'رقم الهاتف',
+'youtube' => 'يوتيوب',
+'instagram' => 'إنستجرام',
+
+'settings' => 'الإعدادات',
+'edit_setting' => 'تعديل الإعدادات',
 ];
