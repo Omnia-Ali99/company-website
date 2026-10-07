@@ -53,5 +53,14 @@ return [
         'position' => 'Position',
         'image' => 'Image',
 
+        'members' => 'Members',
+        'show_member' => 'Show Member',
+        'edit_member' => 'Edit Member',
+        'add_new_member' => 'Add New Member',
+
+        'facebook' => 'Facebook',
+        'twitter' => 'Twitter',
+        'linkedin' => 'LinkedIn',
+
 
 ];

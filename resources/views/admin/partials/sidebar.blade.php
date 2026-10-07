@@ -40,12 +40,14 @@
       <x-sidebar-component name="{{ __('keywords.messages') }}" icon="fe-message-square"
         route="{{ route('admin.messages.index') }}" />
 
-      <x-sidebar-component name="{{ __('keywords.subscribers') }}" icon="fe-users"
+      <x-sidebar-component name="{{ __('keywords.subscribers') }}" icon="fe-user-check"
         route="{{ route('admin.subscribers.index') }}" />
 
       <x-sidebar-component name="{{ __('keywords.testimonials') }}" icon="fe-message-circle"
        route="{{ route('admin.testimonials.index') }}" />
 
+      <x-sidebar-component name="{{ __('keywords.members') }}" icon="fe-users"
+       route="{{ route('admin.members.index') }}" />
 
 
 

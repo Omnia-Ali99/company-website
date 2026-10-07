@@ -54,8 +54,13 @@ return [
 
 
 
+'members' => 'الأعضاء',
+'show_member' => 'عرض العضو',
+'edit_member' => 'تعديل العضو',
+'add_new_member' => 'إضافة عضو جديد',
 
-
-
+'facebook' => 'فيسبوك',
+'twitter' => 'تويتر',
+'linkedin' => 'لينكدإن',
 
 ];

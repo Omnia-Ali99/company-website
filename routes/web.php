@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
@@ -48,6 +49,9 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() .'/admin')->middl
             Route::resource('testimonials', TestimonialController::class);
         });
 
+                Route::controller(MemberController::class)->group(function(){
+            Route::resource('members', MemberController::class);
+        });
 
 
 
