@@ -5,15 +5,15 @@ return [
         'dashboard' => 'Dashboard',
         'idex' => 'Index',
         'login' => 'Login',
-        'sign-in'=>'Sign in',
-        'email'=>'Email',
-        'password'=>'Password',
-        'remember-me'=>'Remember me',
+        'sign-in' => 'Sign in',
+        'email' => 'Email',
+        'password' => 'Password',
+        'remember-me' => 'Remember me',
         'login' => 'Login',
         'logout' => 'Logout',
 
         'services' => 'Services',
-        'features'=>'Features',
+        'features' => 'Features',
         'home' => 'Home',
         'components' => 'Components',
         'icon' => 'Icon',
@@ -21,10 +21,10 @@ return [
         'title' => 'Title',
         'no_records_found' => 'No records found',
         'add_new' => 'Add New',
-        'description'=>'Description',
-        'submit'=>'Submit',
+        'description' => 'Description',
+        'submit' => 'Submit',
         'successfully_created' => 'your record created successfully',
-     
+
         'successfully_updated' => 'your record updated successfully',
         'successfully_deleted' => 'your record deleted successfully',
         'confirm_delete' => 'Are you sure you want to delete this record?',
@@ -37,12 +37,14 @@ return [
         'edit_feature' => 'Edit Feature',
         'add_new_feature' => 'Add New Feature',
 
-        'messages' =>'Messages',
-        'message' =>'Message',
+        'messages' => 'Messages',
+        'message' => 'Message',
         'show_message' => 'Show Message',
-        'name'=>'Name',
-        'subject'=>'Supject',
+        'name' => 'Name',
+        'subject' => 'Supject',
+
+        'subscribers' => 'Subscribers'
 
 
-        
+
 ];

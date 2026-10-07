@@ -32,7 +32,7 @@ class {{ class }} extends Controller
     {
         $data = $request->validated();
         {{ model }}::create($data);
-        return to_route('admin.services.index')->with('success', __('keywords.created_successfully'));
+        return to_route('admin.services.index')->with('success', __('keywords.successfully_created'));
     }
 
     /**
@@ -58,7 +58,7 @@ class {{ class }} extends Controller
     {
         $data = $request->validated();
         ${{ modelVariable }}->update($data);
-        return to_route('admin.services.index')->with('success', __('keywords.updated_successfully'));
+        return to_route('admin.services.index')->with('success', __('keywords.successfully_updated'));
     }
 
     /**
@@ -67,6 +67,6 @@ class {{ class }} extends Controller
     public function destroy({{ model }} ${{ modelVariable }})
     {
         ${{ modelVariable }}->delete();
-        return to_route('admin.services.index')->with('success', __('keywords.deleted_successfully'));
+        return to_route('admin.services.index')->with('success', __('keywords.successfully_deleted'));
     }
 }
