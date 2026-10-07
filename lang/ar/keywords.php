@@ -63,4 +63,9 @@ return [
 'twitter' => 'تويتر',
 'linkedin' => 'لينكدإن',
 
+'companies' => 'الشركات',
+'show_company' => 'عرض الشركة',
+'edit_company' => 'تعديل الشركة',
+'add_new_company' => 'إضافة شركة جديدة',
+
 ];

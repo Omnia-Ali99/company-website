@@ -49,6 +49,10 @@
       <x-sidebar-component name="{{ __('keywords.members') }}" icon="fe-users"
        route="{{ route('admin.members.index') }}" />
 
+  <x-sidebar-component name="{{ __('keywords.companies') }}" icon="fe-briefcase"
+       route="{{ route('admin.companies.index') }}" />
+
+
 
 
     </ul>

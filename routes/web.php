@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
@@ -53,6 +54,9 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() .'/admin')->middl
             Route::resource('members', MemberController::class);
         });
 
+         Route::controller(CompanyController::class)->group(function(){
+            Route::resource('companies', CompanyController::class);
+        });
 
 
 
