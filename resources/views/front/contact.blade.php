@@ -20,37 +20,47 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
                         <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
+                       <x-success-alert-component></x-success-alert-component>
+
+                    <form action="{{ route('front.contact.store') }}" method="post">
+                        @csrf
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name">
+                                    <label for="name">Your Name</label>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
+                                <x-validation-error field="name"></x-validation-error>
                             </div>
-                        </form>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                                <x-validation-error field="email"></x-validation-error>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="subject" class="form-control" id="subject"
+                                        placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <x-validation-error field="subject"></x-validation-error>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                                <x-validation-error field="message"></x-validation-error>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
                     </div>
                 </div>
             </div>

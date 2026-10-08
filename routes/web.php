@@ -2,9 +2,9 @@
 
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\SubscriberController;
@@ -14,11 +14,13 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 
-Route::name('front.')->group(function(){
-    Route::view('/','front.index')->name('index');
-    Route::view('/about','front.about')->name('about');
-    Route::view('/service','front.service')->name('service');
-    Route::view('/contact','front.contact')->name('contact');
+Route::name('front.')->controller(FrontController::class)->group(function(){
+     Route::post('/subscriber/store', 'subscriberStore')->name('subscriber.store');
+    Route::get('/','index')->name('index');
+    Route::get('/about','about')->name('about');
+    Route::get('/service','service')->name('service');
+    Route::post('/contact/store', 'contactStore')->name('contact.store');
+    Route::get('/contact','contact')->name('contact');
 
 });
 
